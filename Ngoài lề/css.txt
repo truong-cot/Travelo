@@ -1,0 +1,152 @@
+html {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+:root {
+	--color-text: #040e27;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button {
+	outline: none;
+}
+input {
+	line-height: normal;
+}
+label,
+button {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 110px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-logo {
+	margin-left: 35px;
+	width: 138px;
+}
+
+.header-nav {
+	flex: 1;
+	margin-left: 82px;
+}
+
+.header-nav .menu {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.header-nav .menu .item {
+	position: relative;
+}
+
+.header-nav .menu .item:hover .menu-drop {
+	opacity: 1;
+	top: 40px;
+	visibility: visible;
+}
+
+.header-nav .menu-drop {
+	position: absolute;
+	list-style: none;
+	opacity: 0;
+	top: 20px;
+	left: 1.2rem;
+	min-width: 200px;
+	transition: 0.5s ease-in-out;
+	visibility: hidden;
+	background-color: #fff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header-nav .menu-drop .item {
+	padding: 0.5rem;
+}
+
+.header-nav .menu .link {
+	padding: 2rem 1.5rem;
+	color: var(--color-text);
+	text-shadow: 0 0 1px var(--color-text);
+	font-size: 1rem;
+	opacity: 0.8;
+	transition: 0.2s;
+}
+
+.header-nav .menu .link:hover {
+	color: #1ec6b6;
+	text-shadow: 0 0 1px #1ec6b6;
+}
+
+.header-control {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-control .phone {
+	color: var(--color-text);
+	text-shadow: 0 0 1px var(--color-text);
+	padding: 0.5rem 1rem;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-control .phone ion-icon {
+	color: #ff4a52;
+	font-size: 1.2rem;
+}
+
+.header-control .social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 1px solid rgb(216, 216, 216);
+	max-height: 30px;
+	padding: 0 1rem;
+}
+
+.header-control .social .item {
+	color: rgb(128, 128, 128);
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-control .research {
+	background-color: #ff4a52;
+	height: 110px;
+	min-width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.3rem;
+	color: #fff;
+	cursor: pointer;
+}
